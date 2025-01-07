@@ -32,3 +32,16 @@ def func2():
 
 result = func2()
 print(result())
+
+def func3(num): 
+    x = 10
+    def innerFunc():
+        return x ** num
+    return innerFunc
+
+result = func3(2)
+result2 = func3(3)
+print(result)
+print(result2)
+print(result())
+print(result2())
